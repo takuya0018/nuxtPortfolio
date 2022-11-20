@@ -22,3 +22,21 @@ ul li {
   --main-fonts: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
   --title-fonts: 'ヒラギノ明朝 ProN W3','Hiragino Mincho ProN',sans-serif
 }
+
+.pc-show {
+  display: block;
+}
+
+.sp-show {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .pc-show {
+    display: none;
+  }
+  
+  .sp-show {
+    display: block;
+  }
+}
