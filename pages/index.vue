@@ -16,7 +16,6 @@
         </div>
       </div>
     </section>
-    <p>a</p>
     <TopServiceContent />
     <TopWorksContent />
   </main>
@@ -117,7 +116,7 @@ export default {
           letter-spacing: .6px;
           margin: 0 0 0 auto;
           padding-left: 190px;
-          opacity: 0;
+          // opacity: 0;
           @media screen and (max-width: 767px) {
             padding-left: 0;
             width: 100%;

@@ -108,6 +108,7 @@ export default {
       color: #666666;
       width: 100%;
       display: inline-block;
+      text-align: center;
       @media screen and (max-width: 767px) {
         font-size: 42px;
         letter-spacing: .5rem;
