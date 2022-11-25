@@ -13,7 +13,7 @@
       <nav>
         <ul class="md:flex md:justify-end md:items-end">
           <li v-for="(item, index) in lists" :key="index">
-            <a v-scroll-to="item.elementLink" :href="item.link">{{ item.txt }}</a>
+            <a :href="item.link">{{ item.txt }}</a>
             <p>{{ item.isClass }}</p>
           </li>
         </ul>
@@ -42,13 +42,13 @@ export default {
         },
         {
           link: '../#service_content_wrap',
-          txt: 'Service',
-          elementLink: '#service_content_wrap'
+          txt: 'Service'
+          // elementLink: '#service_content_wrap'
         },
         {
           link: '../#works_content_wrap',
-          txt: 'Work',
-          elementLink: '#works_content_wrap'
+          txt: 'Work'
+          // elementLink: '#works_content_wrap'
         }
       ]
     }
