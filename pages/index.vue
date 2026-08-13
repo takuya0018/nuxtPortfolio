@@ -35,7 +35,7 @@ export default {
   },
   data () {
     return {
-      paddingHead: '118'
+      paddingHead: '0'
     }
   },
   mounted () {

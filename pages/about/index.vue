@@ -8,7 +8,7 @@
     </h2>
     <section class="about_content">
       <h2 class="name">
-        TAKUYA KIKUTA
+        T K
       </h2>
       <p class="closs_txt">
         東京にてフリーランスのWeb制作をしております。
@@ -135,7 +135,7 @@ export default {
         letter-spacing: 1px;
       }
       &::before {
-        content: "菊田 タクヤ";
+        // content: "菊田 タクヤ";
         display: block;
         line-height: 2;
         font-size: 40px;

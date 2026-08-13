@@ -7,7 +7,7 @@
             Codeing
           </li>
           <li class="my_name">
-            Takuya
+            T
           </li>
         </ul>
       </li>
@@ -17,7 +17,7 @@
             Web Desiger
           </li>
           <li class="my_name">
-            Kikuta
+            K
           </li>
         </ul>
       </li>
