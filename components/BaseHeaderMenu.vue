@@ -13,7 +13,8 @@
       <nav>
         <ul class="md:flex md:justify-end md:items-end">
           <li v-for="(item, index) in lists" :key="index">
-            <a :href="item.link">{{ item.txt }}</a>
+            <nuxt-link v-if="item.txt === 'About'" :to="item.link">{{ item.txt }}</nuxt-link>
+            <a v-else :href="item.link">{{ item.txt }}</a>
             <p>{{ item.isClass }}</p>
           </li>
         </ul>
