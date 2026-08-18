@@ -32,6 +32,9 @@
         </li>
       </ul>
     </article>
+    <div class="works_note" aria-hidden="false">
+      <p>※契約上の理由により、掲載できない制作事例（公開URLを掲載できないもの）が含まれます。詳細はお問い合わせください。</p>
+    </div>
   </section>
 </template>
 
@@ -179,5 +182,12 @@ export default {
         }
       }
     }
+  }
+  .works_note {
+    max-width: 920px;
+    margin: 10px auto 40px;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
   }
 </style>
