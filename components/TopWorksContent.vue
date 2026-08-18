@@ -8,15 +8,26 @@
         <li v-for="(item, index) in items" :key="index" class="work_item ani">
           <h3 class="items_title">
             {{ item.title }}
-            <a :href="item.link" target="_blank">
-              <figure class="works_coding">
+            <template v-if="item.link">
+              <a :href="item.link" target="_blank" rel="noopener noreferrer">
+                <figure class="works_coding">
+                  <img :src="item.image" :alt="item.alt">
+                </figure>
+                <p
+                  class="works_coding_caption"
+                  v-html="item.contentTxt"
+                />
+              </a>
+            </template>
+            <template v-else>
+              <figure class="works_coding no-link">
                 <img :src="item.image" :alt="item.alt">
               </figure>
               <p
                 class="works_coding_caption"
                 v-html="item.contentTxt"
               />
-            </a>
+            </template>
           </h3>
         </li>
       </ul>
@@ -47,7 +58,7 @@ export default {
         },
         {
           title: 'DESING/DESING',
-          link: 'https://shop.mu-mo.net/',
+          link: '',
           image: require('@/assets/image/avex/yoshikiWorks.jpg'),
           alt: 'ミューモ',
           contentTxt: '大手音楽事務所でバナーデザイン・<br>WEBサイトデザイン・サイトを制作'
@@ -61,7 +72,7 @@ export default {
         },
         {
           title: 'CODING',
-          link: 'https://shop.mu-mo.net/',
+          link: '',
           image: require('@/assets/image/avex/wasta.jpg'),
           alt: 'わーすた',
           contentTxt: '大手音楽事務所でバナーデザイン・<br>WEBサイトデザイン・サイトを制作'
